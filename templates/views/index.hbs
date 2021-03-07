@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <!-- relative path -->
+    <!-- <link rel="stylesheet" href="./CSS/styles.css"> -->
+    <!-- absolute path, starts with /(which wil bring you to the root of the hard drives/web server root) -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+</head>
+<body>
+    {{!-- <h1>From a static HTML file</h1> --}}
+    {{!-- <h1>Weather</h1> --}}
+    {{!-- <h1>{{title}}</h1> --}}
+    <div class="main-content">
+        {{>header}}
+        <p>use this site to get weather</p>
+
+        <form>
+            <input type="text" placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id='message-1'></p>
+        <p id='message-2'></p>
+
+    </div>
+    {{!-- <p>Created by: {{name}}</p> --}}
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
