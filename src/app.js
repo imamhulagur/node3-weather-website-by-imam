@@ -8,6 +8,9 @@ const forecast = require('./utils/forecast')
 //create server
 const app = express()
 
+//heroku port config
+const port = process.env.PORT || 3000;
+
 //To provide location of current working directory/folder name
 console.log(__dirname)
 
@@ -162,8 +165,10 @@ app.get('*', (req, res)=>{
 })
 
 //to start server up app.listen(specify port, callback()), 3000 common development port
-app.listen(3000, ()=>{
-    console.log('server is up and running on port 3000')
+// app.listen(3000, ()=>{
+app.listen(port, ()=>{
+    // console.log('server is up and running on port 3000')
+    console.log('server is up and running on port '+port)
 })
 
 //visit localhost:3000 to view the message.
