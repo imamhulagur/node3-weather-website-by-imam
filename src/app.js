@@ -64,7 +64,7 @@ app.get('/help',(req, res) => {
     res.render('help', {
         title: 'Help',
         name: 'Imam Hulagur',
-        helpText: 'This is helpful text. Please visit nodejs.com for more info'
+        helpText: 'Thanks for visiting. Please visit nodejs.com for more info'
     })
 })
 
